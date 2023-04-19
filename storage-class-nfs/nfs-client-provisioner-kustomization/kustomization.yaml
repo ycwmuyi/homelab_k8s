@@ -1,0 +1,7 @@
+namespace: nfs-provisioner
+bases:
+  - ./deploy
+resources:
+  - namespace.yaml
+# patchesStrategicMerge:
+#   - patch_nfs_details.yaml

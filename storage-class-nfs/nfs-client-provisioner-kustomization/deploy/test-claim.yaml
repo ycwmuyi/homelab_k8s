@@ -1,0 +1,12 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: test-claim
+  namespace: nfs-provisioner
+spec:
+  storageClassName: nfs-client-kube-prometheus
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Mi

@@ -1,0 +1,4 @@
+2023-06-26 14:10:28.147 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - command task：52 开始, 记录到数据库
+2023-06-26 14:10:28.152 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - 更新服务实例 服务已停止 状态为: {}zookeeper1
+2023-06-26 14:10:28.154 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - command task：52 结束, 记录到数据库
+2023-06-26 14:10:28.157 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - close sifting Appender of `4-52`

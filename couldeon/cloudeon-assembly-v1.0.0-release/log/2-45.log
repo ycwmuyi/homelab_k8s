@@ -1,0 +1,4 @@
+2023-06-25 22:47:14.867 [ForkJoinPool.commonPool-worker-4] INFO  o.d.c.processor.RegisterPrometheusScrapyTask - command task：45 开始, 记录到数据库
+2023-06-25 22:47:14.875 [ForkJoinPool.commonPool-worker-4] INFO  o.d.c.processor.RegisterPrometheusScrapyTask - 扫描安装包内不存在prometheus目录，退出当前任务....
+2023-06-25 22:47:14.875 [ForkJoinPool.commonPool-worker-4] INFO  o.d.c.processor.RegisterPrometheusScrapyTask - command task：45 结束, 记录到数据库
+2023-06-25 22:47:14.878 [ForkJoinPool.commonPool-worker-4] INFO  o.d.c.processor.RegisterPrometheusScrapyTask - close sifting Appender of `2-45`

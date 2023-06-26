@@ -1,0 +1,4 @@
+2023-06-26 15:07:09.452 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.DeleteServiceDBDataTask - command task：330 开始, 记录到数据库
+2023-06-26 15:07:09.455 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.DeleteServiceDBDataTask - 开始删除 hdfs1 服务相关的表数据....
+2023-06-26 15:07:09.491 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.DeleteServiceDBDataTask - command task：330 结束, 记录到数据库
+2023-06-26 15:07:09.495 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.DeleteServiceDBDataTask - close sifting Appender of `17-330`

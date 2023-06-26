@@ -1,0 +1,20 @@
+2023-06-26 14:17:27.986 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - command task：68 开始, 记录到数据库
+2023-06-26 14:17:27.993 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - 加载配置文件模板目录：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/stack/EDP-1.0.0/zookeeper/render
+2023-06-26 14:17:27.997 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - Scanning directory: /Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/stack/EDP-1.0.0/zookeeper/render
+2023-06-26 14:17:27.998 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: zoo.cfg.ftl
+2023-06-26 14:17:28.000 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper2/k8s-worker-node1/conf/zoo.cfg
+2023-06-26 14:17:28.000 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: jmx_zookeeper.yaml
+2023-06-26 14:17:28.001 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper2/k8s-worker-node1/conf/jmx_zookeeper.yaml
+2023-06-26 14:17:28.001 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: myid.ftl
+2023-06-26 14:17:28.002 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper2/k8s-worker-node1/conf/myid
+2023-06-26 14:17:28.003 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: zookeeper-env.sh.ftl
+2023-06-26 14:17:28.004 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper2/k8s-worker-node1/conf/zookeeper-env.sh
+2023-06-26 14:17:28.004 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: log4j.properties
+2023-06-26 14:17:28.005 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper2/k8s-worker-node1/conf/log4j.properties
+2023-06-26 14:17:28.009 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - 拷贝本地配置目录：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper2/k8s-worker-node1/conf 到节点k8s-worker-node1的：/opt/edp/zookeeper2/conf/
+2023-06-26 14:17:28.320 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - 成功拷贝本地配置目录：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper2/k8s-worker-node1/conf 到节点k8s-worker-node1的：/opt/edp/zookeeper2/conf/
+2023-06-26 14:17:28.320 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - 赋予conf目录下sh脚本执行权限：chmod +x /opt/edp/zookeeper2/conf//*.sh
+2023-06-26 14:17:28.409 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - 移动myid文件到data目录 /opt/edp/zookeeper2/data
+2023-06-26 14:17:28.409 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - ssh执行命令： mv /opt/edp/zookeeper2/conf//myid /opt/edp/zookeeper2/data
+2023-06-26 14:17:28.541 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - command task：68 结束, 记录到数据库
+2023-06-26 14:17:28.546 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.ConfigTask - close sifting Appender of `6-68`

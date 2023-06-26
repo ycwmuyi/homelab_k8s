@@ -1,0 +1,93 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  labels:
+    name: "zookeeper-server-zookeeper1"
+  name: "zookeeper-server-zookeeper1"
+  namespace: "default"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: "zookeeper-server-zookeeper1"
+  strategy:
+    type: "RollingUpdate"
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+  minReadySeconds: 5
+  revisionHistoryLimit: 10
+  template:
+    metadata:
+      labels:
+        name: "zookeeper-server-zookeeper1"
+        app: "zookeeper-server-zookeeper1"
+        podConflictName: "zookeeper-server-zookeeper1"
+      annotations:
+        serviceInstanceName: "zookeeper1"
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchLabels:
+                name: "zookeeper-server-zookeeper1"
+                podConflictName: "zookeeper-server-zookeeper1"
+            namespaces:
+            - "default"
+            topologyKey: "kubernetes.io/hostname"
+      hostPID: false
+      hostNetwork: true
+      containers:
+      - env:
+        - name: "ZOOCFGDIR"
+          value: "/opt/edp/zookeeper1/conf"
+        - name: USER
+          value: zookeeper
+        image: "registry.cn-hangzhou.aliyuncs.com/udh/zookeeper:3.5.9"
+        imagePullPolicy: "Always"
+        readinessProbe:
+          exec:
+            command:
+            - "/bin/bash"
+            - "-c"
+            - " echo 'stat' | nc localhost 2181 > /tmp/stat_zk; cat /tmp/stat_zk; grep -qE 'Mode: (follower|leader|standalone)' /tmp/stat_zk "
+          failureThreshold: 3
+          initialDelaySeconds: 3
+          periodSeconds: 30
+          successThreshold: 1
+          timeoutSeconds: 15
+        name: "zookeeper-server-zookeeper1"
+        resources:
+          requests: {}
+          limits: {}
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - mountPath: "/opt/edp/zookeeper1/data"
+          name: "data"
+        - mountPath: "/opt/edp/zookeeper1/log"
+          name: "log"
+        - mountPath: "/etc/localtime"
+          name: "timezone"
+        - mountPath: "/opt/edp/zookeeper1/conf"
+          name: "conf"
+
+      nodeSelector:
+        zookeeper-server-zookeeper1: "true"
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - hostPath:
+          path: "/opt/edp/zookeeper1/data"
+        name: "data"
+      - hostPath:
+          path: "/opt/edp/zookeeper1/log"
+        name: "log"
+      - hostPath:
+          path: "/etc/localtime"
+        name: "timezone"
+      - hostPath:
+          path: "/opt/edp/zookeeper1/conf"
+        name: "conf"
+

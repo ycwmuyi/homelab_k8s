@@ -1,0 +1,21 @@
+2023-06-26 15:23:29.392 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - command task：362 开始, 记录到数据库
+2023-06-26 15:23:29.399 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - 开始角色k8s资源文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/k8s-resource/hdfs2
+2023-06-26 15:23:29.400 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - 目录/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/k8s-resource/hdfs2不存在，创建目录...
+2023-06-26 15:23:29.400 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - 加载服务实例角色k8s资源模板目录：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/stack/EDP-1.0.0/hdfs/k8s
+2023-06-26 15:23:29.412 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - 完成角色k8s资源文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/k8s-resource/hdfs2/hadoop-hdfs-journalnode.yaml
+2023-06-26 15:23:29.876 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - 在k8s上启动deployment: hadoop-hdfs-journalnode-hdfs2 ,使用本地资源文件: /Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/k8s-resource/hdfs2/hadoop-hdfs-journalnode.yaml ,持续等待 10 分钟
+2023-06-26 15:24:51.919 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - ========================starting journalnode========================
+WARNING: Use of this script to start HDFS daemons is deprecated.
+WARNING: Attempting to execute replacement "hdfs --daemon start" instead.
+WARNING: HADOOP_JOURNALNODE_OPTS has been replaced by HDFS_JOURNALNODE_OPTS. Using value of HADOOP_JOURNALNODE_OPTS.
+========================starting journalnode========================
+WARNING: Use of this script to start HDFS daemons is deprecated.
+WARNING: Attempting to execute replacement "hdfs --daemon start" instead.
+WARNING: HADOOP_JOURNALNODE_OPTS has been replaced by HDFS_JOURNALNODE_OPTS. Using value of HADOOP_JOURNALNODE_OPTS.
+========================starting journalnode========================
+WARNING: Use of this script to start HDFS daemons is deprecated.
+WARNING: Attempting to execute replacement "hdfs --daemon start" instead.
+WARNING: HADOOP_JOURNALNODE_OPTS has been replaced by HDFS_JOURNALNODE_OPTS. Using value of HADOOP_JOURNALNODE_OPTS.
+
+2023-06-26 15:24:51.927 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - command task：362 结束, 记录到数据库
+2023-06-26 15:24:51.930 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - close sifting Appender of `18-362`

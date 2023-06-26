@@ -1,0 +1,12 @@
+2023-06-25 23:06:43.817 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - command task：70 开始, 记录到数据库
+2023-06-25 23:06:43.820 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/hdfs1/conf
+2023-06-25 23:06:43.824 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/hdfs1/conf
+2023-06-25 23:06:43.858 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/hdfs1/conf
+2023-06-25 23:06:43.859 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/hdfs1/log
+2023-06-25 23:06:43.863 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/hdfs1/log
+2023-06-25 23:06:43.935 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/hdfs1/log
+2023-06-25 23:06:43.936 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/hdfs1/data
+2023-06-25 23:06:43.939 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/hdfs1/data
+2023-06-25 23:06:43.975 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/hdfs1/data
+2023-06-25 23:06:43.975 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - command task：70 结束, 记录到数据库
+2023-06-25 23:06:43.979 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.InstallTask - close sifting Appender of `4-70`

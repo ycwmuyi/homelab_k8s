@@ -1,0 +1,5 @@
+2023-06-25 23:06:46.952 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.HdfsZkfcFormatTask - command task：83 开始, 记录到数据库
+2023-06-25 23:06:46.958 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.HdfsZkfcFormatTask - 在节点192.168.100.52上执行命令:sudo docker  run --net=host -v /opt/edp/hdfs1/conf:/opt/edp/hdfs1/conf  registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4 sh -c "  yes Y| hdfs --config  /opt/edp/hdfs1/conf zkfc -formatZK "   
+2023-06-25 23:06:47.109 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.HdfsZkfcFormatTask - 83:发生异常，处理异常。。。ssh 执行命令失败：docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
+See 'docker run --help'.
+

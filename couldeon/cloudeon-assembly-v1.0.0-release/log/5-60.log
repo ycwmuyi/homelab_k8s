@@ -1,0 +1,4 @@
+2023-06-26 14:10:33.464 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.DeleteServiceDBDataTask - command task：60 开始, 记录到数据库
+2023-06-26 14:10:33.467 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.DeleteServiceDBDataTask - 开始删除 zookeeper1 服务相关的表数据....
+2023-06-26 14:10:33.494 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.DeleteServiceDBDataTask - command task：60 结束, 记录到数据库
+2023-06-26 14:10:33.497 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.DeleteServiceDBDataTask - close sifting Appender of `5-60`

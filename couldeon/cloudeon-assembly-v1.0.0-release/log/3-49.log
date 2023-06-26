@@ -1,0 +1,4 @@
+2023-06-25 22:49:57.575 [ForkJoinPool.commonPool-worker-10] INFO  org.dromara.cloudeon.processor.CancelHostTagTask - command task：49 开始, 记录到数据库
+2023-06-25 22:49:57.619 [ForkJoinPool.commonPool-worker-10] INFO  org.dromara.cloudeon.processor.CancelHostTagTask - 给k8s节点 k8s-worker-node3 移除label :zookeeper-server-zookeeper1
+2023-06-25 22:49:57.653 [ForkJoinPool.commonPool-worker-10] INFO  org.dromara.cloudeon.processor.CancelHostTagTask - command task：49 结束, 记录到数据库
+2023-06-25 22:49:57.657 [ForkJoinPool.commonPool-worker-10] INFO  org.dromara.cloudeon.processor.CancelHostTagTask - close sifting Appender of `3-49`

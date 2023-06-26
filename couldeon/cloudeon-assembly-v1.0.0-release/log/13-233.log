@@ -1,0 +1,4 @@
+2023-06-26 15:05:05.208 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.CancelHostTagTask - command task：233 开始, 记录到数据库
+2023-06-26 15:05:05.329 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.CancelHostTagTask - 给k8s节点 k8s-worker-node2 移除label :hadoop-hdfs-datanode-hdfs1
+2023-06-26 15:05:05.373 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.CancelHostTagTask - command task：233 结束, 记录到数据库
+2023-06-26 15:05:05.378 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.CancelHostTagTask - close sifting Appender of `13-233`

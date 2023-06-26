@@ -1,0 +1,103 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  labels:
+    name: "hadoop-hdfs-namenode-hdfs2"
+  name: "hadoop-hdfs-namenode-hdfs2"
+  namespace: "default"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "hadoop-hdfs-namenode-hdfs2"
+  strategy:
+    type: "RollingUpdate"
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+  minReadySeconds: 5
+  revisionHistoryLimit: 10
+  template:
+    metadata:
+      labels:
+        name: "hadoop-hdfs-namenode-hdfs2"
+        app: "hadoop-hdfs-namenode-hdfs2"
+        podConflictName: "hadoop-hdfs-namenode-hdfs2"
+      annotations:
+        serviceInstanceName: "hdfs2"
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchLabels:
+                name: "hadoop-hdfs-namenode-hdfs2"
+                podConflictName: "hadoop-hdfs-namenode-hdfs2"
+            namespaces:
+            - "default"
+            topologyKey: "kubernetes.io/hostname"
+      hostPID: false
+      hostNetwork: true
+      initContainers:
+        - name: namenode-format
+          image: "registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4"
+          args:
+            - "/opt/edp/hdfs2/conf/namenode-format.sh"
+          volumeMounts:
+            - mountPath: "/opt/edp/hdfs2/data"
+              name: "data"
+            - mountPath: "/opt/edp/hdfs2/log"
+              name: "log"
+            - mountPath: "/etc/localtime"
+              name: "timezone"
+            - mountPath: "/opt/edp/hdfs2/conf"
+              name: "conf"
+      containers:
+      - args:
+        - "/opt/edp/hdfs2/conf/namenode-bootstrap.sh"
+        image: "registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4"
+        imagePullPolicy: "Always"
+        name: "hadoop-hdfs-namenode-hdfs2"
+        readinessProbe:
+          httpGet:
+            path: "/jmx?qry=Hadoop:service=NameNode,name=NameNodeInfo&&user.name=hdfs"
+            port: 50070
+            scheme: "HTTP"
+          failureThreshold: 3
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        resources:
+          requests: {}
+          limits: {}
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - mountPath: "/opt/edp/hdfs2/data"
+          name: "data"
+        - mountPath: "/opt/edp/hdfs2/log"
+          name: "log"
+        - mountPath: "/etc/localtime"
+          name: "timezone"
+        - mountPath: "/opt/edp/hdfs2/conf"
+          name: "conf"
+
+      nodeSelector:
+        hadoop-hdfs-namenode-hdfs2: "true"
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - hostPath:
+          path: "/opt/edp/hdfs2/data"
+        name: "data"
+      - hostPath:
+          path: "/opt/edp/hdfs2/log"
+        name: "log"
+      - hostPath:
+          path: "/etc/localtime"
+        name: "timezone"
+      - hostPath:
+          path: "/opt/edp/hdfs2/conf"
+        name: "conf"
+

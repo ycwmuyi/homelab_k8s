@@ -1,0 +1,4 @@
+2023-06-26 15:26:21.451 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - command task：373 开始, 记录到数据库
+2023-06-26 15:26:21.456 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - 更新服务实例 服务已启动 状态为: {}hdfs2
+2023-06-26 15:26:21.458 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - command task：373 结束, 记录到数据库
+2023-06-26 15:26:21.462 [ForkJoinPool.commonPool-worker-6] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - close sifting Appender of `18-373`

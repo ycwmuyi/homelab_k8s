@@ -1,0 +1,10 @@
+2023-06-26 15:19:50.648 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.PullImageTask - command task：331 开始, 记录到数据库
+2023-06-26 15:19:50.660 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.PullImageTask - 节点：k8s-worker-node1 上拉取镜像：registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4
+2023-06-26 15:19:50.847 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.PullImageTask - 节点：k8s-worker-node1 上执行命令：docker pull registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4
+2023-06-26 15:19:51.362 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.PullImageTask - 3.3.4: Pulling from udh/hadoop
+Digest: sha256:b2d80411cc3d226b4747f42ffd8dbbc44bb336affb722b3506d04178f3c3b9d2
+Status: Image is up to date for registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4
+registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4
+2023-06-26 15:19:51.363 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.PullImageTask - 成功在节点：k8s-worker-node1 上拉取镜像：registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4
+2023-06-26 15:19:51.363 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.PullImageTask - command task：331 结束, 记录到数据库
+2023-06-26 15:19:51.366 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.PullImageTask - close sifting Appender of `18-331`

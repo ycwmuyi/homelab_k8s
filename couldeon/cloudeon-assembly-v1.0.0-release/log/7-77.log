@@ -1,0 +1,44 @@
+2023-06-26 14:31:59.679 [ForkJoinPool.commonPool-worker-14] INFO  org.dromara.cloudeon.processor.PullImageTask - command task：77 开始, 记录到数据库
+2023-06-26 14:31:59.684 [ForkJoinPool.commonPool-worker-14] INFO  org.dromara.cloudeon.processor.PullImageTask - 节点：k8s-worker-node2 上拉取镜像：registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4
+2023-06-26 14:31:59.860 [ForkJoinPool.commonPool-worker-14] INFO  org.dromara.cloudeon.processor.PullImageTask - 节点：k8s-worker-node2 上执行命令：docker pull registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4
+2023-06-26 14:36:19.551 [ForkJoinPool.commonPool-worker-14] INFO  org.dromara.cloudeon.processor.PullImageTask - 3.3.4: Pulling from udh/hadoop
+9a598663ae73: Already exists
+affda14d0269: Pulling fs layer
+75fbbc60150f: Pulling fs layer
+d662dc7c27d3: Pulling fs layer
+0a9037958e8a: Pulling fs layer
+1ee3d1854cf2: Pulling fs layer
+c256c5a984c6: Pulling fs layer
+35264e61b8b6: Pulling fs layer
+619b01d8da89: Pulling fs layer
+c22264054e09: Pulling fs layer
+c256c5a984c6: Verifying Checksum
+c256c5a984c6: Download complete
+619b01d8da89: Verifying Checksum
+619b01d8da89: Download complete
+0a9037958e8a: Verifying Checksum
+0a9037958e8a: Download complete
+35264e61b8b6: Verifying Checksum
+d662dc7c27d3: Verifying Checksum
+d662dc7c27d3: Download complete
+1ee3d1854cf2: Download complete
+affda14d0269: Verifying Checksum
+affda14d0269: Download complete
+affda14d0269: Pull complete
+75fbbc60150f: Download complete
+75fbbc60150f: Pull complete
+d662dc7c27d3: Pull complete
+0a9037958e8a: Pull complete
+1ee3d1854cf2: Pull complete
+c256c5a984c6: Pull complete
+35264e61b8b6: Pull complete
+619b01d8da89: Pull complete
+c22264054e09: Verifying Checksum
+c22264054e09: Download complete
+c22264054e09: Pull complete
+Digest: sha256:b2d80411cc3d226b4747f42ffd8dbbc44bb336affb722b3506d04178f3c3b9d2
+Status: Downloaded newer image for registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4
+registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4
+2023-06-26 14:36:19.552 [ForkJoinPool.commonPool-worker-14] INFO  org.dromara.cloudeon.processor.PullImageTask - 成功在节点：k8s-worker-node2 上拉取镜像：registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4
+2023-06-26 14:36:19.552 [ForkJoinPool.commonPool-worker-14] INFO  org.dromara.cloudeon.processor.PullImageTask - command task：77 结束, 记录到数据库
+2023-06-26 14:36:19.556 [ForkJoinPool.commonPool-worker-14] INFO  org.dromara.cloudeon.processor.PullImageTask - close sifting Appender of `7-77`

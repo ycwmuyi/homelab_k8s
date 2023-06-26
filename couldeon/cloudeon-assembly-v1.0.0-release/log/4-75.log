@@ -1,0 +1,38 @@
+2023-06-25 23:06:44.812 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - command task：75 开始, 记录到数据库
+2023-06-25 23:06:44.821 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 加载配置文件模板目录：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/stack/EDP-1.0.0/hdfs/render
+2023-06-25 23:06:44.843 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - Scanning directory: /Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/stack/EDP-1.0.0/hdfs/render
+2023-06-25 23:06:44.844 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: httpfs-log4j.properties
+2023-06-25 23:06:44.844 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/httpfs-log4j.properties
+2023-06-25 23:06:44.845 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: journalnode-bootstrap.sh.ftl
+2023-06-25 23:06:44.846 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/journalnode-bootstrap.sh
+2023-06-25 23:06:44.846 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: datanode-bootstrap.sh.ftl
+2023-06-25 23:06:44.847 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/datanode-bootstrap.sh
+2023-06-25 23:06:44.847 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: httpfs-site.xml.ftl
+2023-06-25 23:06:44.849 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/httpfs-site.xml
+2023-06-25 23:06:44.849 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: namenode-format.sh.ftl
+2023-06-25 23:06:44.852 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/namenode-format.sh
+2023-06-25 23:06:44.852 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: httpfs-bootstrap.sh.ftl
+2023-06-25 23:06:44.853 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/httpfs-bootstrap.sh
+2023-06-25 23:06:44.853 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: jmx_prometheus.yaml
+2023-06-25 23:06:44.854 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/jmx_prometheus.yaml
+2023-06-25 23:06:44.854 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: hdfs-site.xml.ftl
+2023-06-25 23:06:44.861 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/hdfs-site.xml
+2023-06-25 23:06:44.861 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: hadoop-metrics2-namenode.properties
+2023-06-25 23:06:44.862 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/hadoop-metrics2-namenode.properties
+2023-06-25 23:06:44.863 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: hadoop-hdfs-env.sh.ftl
+2023-06-25 23:06:44.866 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/hadoop-hdfs-env.sh
+2023-06-25 23:06:44.866 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: hadoop-metrics2-datanode.properties
+2023-06-25 23:06:44.867 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/hadoop-metrics2-datanode.properties
+2023-06-25 23:06:44.867 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: core-site.xml.ftl
+2023-06-25 23:06:44.870 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/core-site.xml
+2023-06-25 23:06:44.871 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: namenode-bootstrap.sh.ftl
+2023-06-25 23:06:44.872 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/namenode-bootstrap.sh
+2023-06-25 23:06:44.873 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: log4j.properties
+2023-06-25 23:06:44.875 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/log4j.properties
+2023-06-25 23:06:44.876 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: dfs.exclude
+2023-06-25 23:06:44.877 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf/dfs.exclude
+2023-06-25 23:06:44.891 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 拷贝本地配置目录：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf 到节点k8s-master-node1的：/opt/edp/hdfs1/conf/
+2023-06-25 23:06:45.074 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 成功拷贝本地配置目录：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/hdfs1/k8s-master-node1/conf 到节点k8s-master-node1的：/opt/edp/hdfs1/conf/
+2023-06-25 23:06:45.074 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - 赋予conf目录下sh脚本执行权限：chmod +x /opt/edp/hdfs1/conf//*.sh
+2023-06-25 23:06:45.105 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - command task：75 结束, 记录到数据库
+2023-06-25 23:06:45.110 [ForkJoinPool.commonPool-worker-5] INFO  org.dromara.cloudeon.processor.ConfigTask - close sifting Appender of `4-75`

@@ -1,0 +1,77 @@
+2023-06-26 14:12:30.804 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.PullImageTask - command task：63 开始, 记录到数据库
+2023-06-26 14:12:30.809 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.PullImageTask - 节点：k8s-master-node1 上拉取镜像：registry.cn-hangzhou.aliyuncs.com/udh/zookeeper:3.5.9
+2023-06-26 14:12:30.810 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.PullImageTask - 节点：k8s-master-node1 上执行命令：docker pull registry.cn-hangzhou.aliyuncs.com/udh/zookeeper:3.5.9
+2023-06-26 14:17:25.197 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.PullImageTask - 3.5.9: Pulling from udh/zookeeper
+9a598663ae73: Pulling fs layer
+2034512570c4: Pulling fs layer
+4a122d4579c2: Pulling fs layer
+13c6d58f8524: Pulling fs layer
+45f7be3cc6fe: Pulling fs layer
+8fdc73383ae9: Pulling fs layer
+ca9505cf7269: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+87e2f7968972: Pulling fs layer
+08732bb5bdcf: Pulling fs layer
+46df941398c6: Pulling fs layer
+61c0445a1b3b: Pulling fs layer
+3b968e72c150: Pulling fs layer
+87cbb3300746: Pulling fs layer
+46df941398c6: Waiting
+61c0445a1b3b: Waiting
+3b968e72c150: Waiting
+87cbb3300746: Waiting
+8fdc73383ae9: Download complete
+08732bb5bdcf: Verifying Checksum
+08732bb5bdcf: Download complete
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+ca9505cf7269: Verifying Checksum
+ca9505cf7269: Download complete
+45f7be3cc6fe: Verifying Checksum
+45f7be3cc6fe: Download complete
+13c6d58f8524: Verifying Checksum
+13c6d58f8524: Download complete
+46df941398c6: Download complete
+3b968e72c150: Verifying Checksum
+3b968e72c150: Download complete
+87cbb3300746: Verifying Checksum
+61c0445a1b3b: Verifying Checksum
+61c0445a1b3b: Download complete
+87cbb3300746: Download complete
+87e2f7968972: Verifying Checksum
+87e2f7968972: Download complete
+2034512570c4: Verifying Checksum
+2034512570c4: Download complete
+4a122d4579c2: Retrying in 5 seconds
+9a598663ae73: Retrying in 5 seconds
+4a122d4579c2: Retrying in 4 seconds
+9a598663ae73: Retrying in 4 seconds
+4a122d4579c2: Retrying in 3 seconds
+9a598663ae73: Retrying in 3 seconds
+4a122d4579c2: Retrying in 2 seconds
+9a598663ae73: Retrying in 2 seconds
+4a122d4579c2: Retrying in 1 second
+9a598663ae73: Retrying in 1 second
+9a598663ae73: Download complete
+4a122d4579c2: Verifying Checksum
+4a122d4579c2: Download complete
+9a598663ae73: Pull complete
+2034512570c4: Pull complete
+4a122d4579c2: Pull complete
+13c6d58f8524: Pull complete
+45f7be3cc6fe: Pull complete
+8fdc73383ae9: Pull complete
+ca9505cf7269: Pull complete
+4f4fb700ef54: Pull complete
+87e2f7968972: Pull complete
+08732bb5bdcf: Pull complete
+46df941398c6: Pull complete
+61c0445a1b3b: Pull complete
+3b968e72c150: Pull complete
+87cbb3300746: Pull complete
+Digest: sha256:579592bff73f23e38bad519612688302a207b6eaceb09b27ad47b6e25594616b
+Status: Downloaded newer image for registry.cn-hangzhou.aliyuncs.com/udh/zookeeper:3.5.9
+registry.cn-hangzhou.aliyuncs.com/udh/zookeeper:3.5.9
+2023-06-26 14:17:25.197 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.PullImageTask - 成功在节点：k8s-master-node1 上拉取镜像：registry.cn-hangzhou.aliyuncs.com/udh/zookeeper:3.5.9
+2023-06-26 14:17:25.197 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.PullImageTask - command task：63 结束, 记录到数据库
+2023-06-26 14:17:25.201 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.PullImageTask - close sifting Appender of `6-63`

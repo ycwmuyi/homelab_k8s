@@ -1,0 +1,50 @@
+2023-06-25 22:32:46.303 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - command task：8 开始, 记录到数据库
+2023-06-25 22:32:46.312 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - 加载配置文件模板目录：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/stack/EDP-1.0.0/zookeeper/render
+2023-06-25 22:32:46.317 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - Scanning directory: /Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/stack/EDP-1.0.0/zookeeper/render
+2023-06-25 22:32:46.318 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: zoo.cfg.ftl
+2023-06-25 22:32:46.320 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper1/k8s-worker-node2/conf/zoo.cfg
+2023-06-25 22:32:46.320 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: jmx_zookeeper.yaml
+2023-06-25 22:32:46.321 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper1/k8s-worker-node2/conf/jmx_zookeeper.yaml
+2023-06-25 22:32:46.321 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: myid.ftl
+2023-06-25 22:32:46.323 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper1/k8s-worker-node2/conf/myid
+2023-06-25 22:32:46.324 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: zookeeper-env.sh.ftl
+2023-06-25 22:32:46.333 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper1/k8s-worker-node2/conf/zookeeper-env.sh
+2023-06-25 22:32:46.334 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - File found: log4j.properties
+2023-06-25 22:32:46.334 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - 完成配置文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper1/k8s-worker-node2/conf/log4j.properties
+2023-06-25 22:32:46.337 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - 拷贝本地配置目录：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper1/k8s-worker-node2/conf 到节点k8s-worker-node2的：/opt/edp/zookeeper1/conf/
+2023-06-25 22:32:46.392 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - 成功拷贝本地配置目录：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/zookeeper1/k8s-worker-node2/conf 到节点k8s-worker-node2的：/opt/edp/zookeeper1/conf/
+2023-06-25 22:32:46.392 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - 赋予conf目录下sh脚本执行权限：chmod +x /opt/edp/zookeeper1/conf//*.sh
+2023-06-25 22:32:46.420 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - 移动myid文件到data目录 /opt/edp/zookeeper1/data
+2023-06-25 22:32:46.420 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - ssh执行命令： mv /opt/edp/zookeeper1/conf//myid /opt/edp/zookeeper1/data
+2023-06-25 22:32:46.453 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - command task：8 结束, 记录到数据库
+2023-06-25 22:32:46.459 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.ConfigTask - close sifting Appender of `1-8`
+2023-06-26 13:38:03.874 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - command task：8 开始, 记录到数据库
+2023-06-26 13:38:03.881 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/conf
+2023-06-26 13:38:03.889 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/conf
+2023-06-26 13:38:03.961 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/conf
+2023-06-26 13:38:03.961 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/conf/rule
+2023-06-26 13:38:03.969 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/conf/rule
+2023-06-26 13:38:04.056 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/conf/rule
+2023-06-26 13:38:04.056 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/conf/discovery_configs
+2023-06-26 13:38:04.065 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/conf/discovery_configs
+2023-06-26 13:38:04.149 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/conf/discovery_configs
+2023-06-26 13:38:04.150 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/log
+2023-06-26 13:38:04.158 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/log
+2023-06-26 13:38:04.240 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/log
+2023-06-26 13:38:04.240 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/data
+2023-06-26 13:38:04.248 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/data
+2023-06-26 13:38:04.331 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/data
+2023-06-26 13:38:04.331 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/data/grafana
+2023-06-26 13:38:04.339 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/data/grafana
+2023-06-26 13:38:04.422 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/data/grafana
+2023-06-26 13:38:04.422 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/data/prometheus
+2023-06-26 13:38:04.430 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/data/prometheus
+2023-06-26 13:38:04.515 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/data/prometheus
+2023-06-26 13:38:04.515 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/data/alertmanager
+2023-06-26 13:38:04.524 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/data/alertmanager
+2023-06-26 13:38:04.614 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/data/alertmanager
+2023-06-26 13:38:04.614 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/data/nodeexporter
+2023-06-26 13:38:04.625 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/data/nodeexporter
+2023-06-26 13:38:04.708 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node1 上创建目录：/opt/edp/monitor1/data/nodeexporter
+2023-06-26 13:38:04.708 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - command task：8 结束, 记录到数据库
+2023-06-26 13:38:04.712 [ForkJoinPool.commonPool-worker-9] INFO  org.dromara.cloudeon.processor.InstallTask - close sifting Appender of `1-8`

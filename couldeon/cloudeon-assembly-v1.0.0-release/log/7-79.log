@@ -1,0 +1,2 @@
+2023-06-26 14:40:03.738 [ForkJoinPool.commonPool-worker-14] INFO  org.dromara.cloudeon.processor.PullImageTask - command task：79 开始, 记录到数据库
+2023-06-26 14:40:03.742 [ForkJoinPool.commonPool-worker-14] INFO  org.dromara.cloudeon.processor.PullImageTask - 节点：k8s-worker-node1 上拉取镜像：registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4

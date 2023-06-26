@@ -1,0 +1,96 @@
+2023-06-25 22:44:25.170 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - command task：25 开始, 记录到数据库
+2023-06-25 22:44:25.174 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/conf
+2023-06-25 22:44:25.178 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/conf
+2023-06-25 22:44:25.219 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/conf
+2023-06-25 22:44:25.219 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/conf/rule
+2023-06-25 22:44:25.223 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/conf/rule
+2023-06-25 22:44:25.328 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/conf/rule
+2023-06-25 22:44:25.329 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/conf/discovery_configs
+2023-06-25 22:44:25.342 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/conf/discovery_configs
+2023-06-25 22:44:25.383 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/conf/discovery_configs
+2023-06-25 22:44:25.383 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/log
+2023-06-25 22:44:25.386 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/log
+2023-06-25 22:44:25.488 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/log
+2023-06-25 22:44:25.488 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/data
+2023-06-25 22:44:25.491 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/data
+2023-06-25 22:44:25.529 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/data
+2023-06-25 22:44:25.529 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/data/grafana
+2023-06-25 22:44:25.535 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/data/grafana
+2023-06-25 22:44:25.615 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/data/grafana
+2023-06-25 22:44:25.615 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/data/prometheus
+2023-06-25 22:44:25.618 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/data/prometheus
+2023-06-25 22:44:25.659 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/data/prometheus
+2023-06-25 22:44:25.660 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/data/alertmanager
+2023-06-25 22:44:25.664 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/data/alertmanager
+2023-06-25 22:44:25.742 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/data/alertmanager
+2023-06-25 22:44:25.742 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/data/nodeexporter
+2023-06-25 22:44:25.746 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/monitor1/data/nodeexporter
+2023-06-25 22:44:25.790 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-worker-node2 上创建目录：/opt/edp/monitor1/data/nodeexporter
+2023-06-25 22:44:25.791 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - command task：25 结束, 记录到数据库
+2023-06-25 22:44:25.797 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.InstallTask - close sifting Appender of `2-25`
+2023-06-26 13:47:10.162 [ForkJoinPool.commonPool-worker-13] INFO  org.dromara.cloudeon.processor.PullImageTask - command task：25 开始, 记录到数据库
+2023-06-26 13:47:10.166 [ForkJoinPool.commonPool-worker-13] INFO  org.dromara.cloudeon.processor.PullImageTask - 节点：k8s-worker-node2 上拉取镜像：registry.cn-hangzhou.aliyuncs.com/udh/zookeeper:3.5.9
+2023-06-26 13:47:10.382 [ForkJoinPool.commonPool-worker-13] INFO  org.dromara.cloudeon.processor.PullImageTask - 节点：k8s-worker-node2 上执行命令：docker pull registry.cn-hangzhou.aliyuncs.com/udh/zookeeper:3.5.9
+2023-06-26 13:48:43.857 [ForkJoinPool.commonPool-worker-13] INFO  org.dromara.cloudeon.processor.PullImageTask - 3.5.9: Pulling from udh/zookeeper
+9a598663ae73: Pulling fs layer
+2034512570c4: Pulling fs layer
+4a122d4579c2: Pulling fs layer
+13c6d58f8524: Pulling fs layer
+45f7be3cc6fe: Pulling fs layer
+8fdc73383ae9: Pulling fs layer
+ca9505cf7269: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+87e2f7968972: Pulling fs layer
+08732bb5bdcf: Pulling fs layer
+46df941398c6: Pulling fs layer
+61c0445a1b3b: Pulling fs layer
+3b968e72c150: Pulling fs layer
+87cbb3300746: Pulling fs layer
+3b968e72c150: Waiting
+87cbb3300746: Waiting
+46df941398c6: Waiting
+61c0445a1b3b: Waiting
+ca9505cf7269: Verifying Checksum
+ca9505cf7269: Download complete
+8fdc73383ae9: Verifying Checksum
+8fdc73383ae9: Download complete
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+08732bb5bdcf: Verifying Checksum
+08732bb5bdcf: Download complete
+45f7be3cc6fe: Download complete
+61c0445a1b3b: Verifying Checksum
+61c0445a1b3b: Download complete
+87cbb3300746: Verifying Checksum
+87cbb3300746: Download complete
+46df941398c6: Download complete
+3b968e72c150: Verifying Checksum
+3b968e72c150: Download complete
+13c6d58f8524: Verifying Checksum
+13c6d58f8524: Download complete
+87e2f7968972: Verifying Checksum
+87e2f7968972: Download complete
+2034512570c4: Download complete
+9a598663ae73: Verifying Checksum
+9a598663ae73: Download complete
+9a598663ae73: Pull complete
+2034512570c4: Pull complete
+4a122d4579c2: Download complete
+4a122d4579c2: Pull complete
+13c6d58f8524: Pull complete
+45f7be3cc6fe: Pull complete
+8fdc73383ae9: Pull complete
+ca9505cf7269: Pull complete
+4f4fb700ef54: Pull complete
+87e2f7968972: Pull complete
+08732bb5bdcf: Pull complete
+46df941398c6: Pull complete
+61c0445a1b3b: Pull complete
+3b968e72c150: Pull complete
+87cbb3300746: Pull complete
+Digest: sha256:579592bff73f23e38bad519612688302a207b6eaceb09b27ad47b6e25594616b
+Status: Downloaded newer image for registry.cn-hangzhou.aliyuncs.com/udh/zookeeper:3.5.9
+registry.cn-hangzhou.aliyuncs.com/udh/zookeeper:3.5.9
+2023-06-26 13:48:43.858 [ForkJoinPool.commonPool-worker-13] INFO  org.dromara.cloudeon.processor.PullImageTask - 成功在节点：k8s-worker-node2 上拉取镜像：registry.cn-hangzhou.aliyuncs.com/udh/zookeeper:3.5.9
+2023-06-26 13:48:43.858 [ForkJoinPool.commonPool-worker-13] INFO  org.dromara.cloudeon.processor.PullImageTask - command task：25 结束, 记录到数据库
+2023-06-26 13:48:43.862 [ForkJoinPool.commonPool-worker-13] INFO  org.dromara.cloudeon.processor.PullImageTask - close sifting Appender of `2-25`

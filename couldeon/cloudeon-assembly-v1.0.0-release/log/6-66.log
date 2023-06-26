@@ -1,0 +1,12 @@
+2023-06-26 14:17:26.864 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - command task：66 开始, 记录到数据库
+2023-06-26 14:17:26.868 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-master-node1 上创建目录：/opt/edp/zookeeper2/conf
+2023-06-26 14:17:27.147 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/zookeeper2/conf
+2023-06-26 14:17:27.197 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-master-node1 上创建目录：/opt/edp/zookeeper2/conf
+2023-06-26 14:17:27.197 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-master-node1 上创建目录：/opt/edp/zookeeper2/log
+2023-06-26 14:17:27.222 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/zookeeper2/log
+2023-06-26 14:17:27.293 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-master-node1 上创建目录：/opt/edp/zookeeper2/log
+2023-06-26 14:17:27.293 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - 节点：k8s-master-node1 上创建目录：/opt/edp/zookeeper2/data
+2023-06-26 14:17:27.317 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - 执行远程命令：chmod 777 -R /opt/edp/zookeeper2/data
+2023-06-26 14:17:27.539 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - 成功在节点：k8s-master-node1 上创建目录：/opt/edp/zookeeper2/data
+2023-06-26 14:17:27.540 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - command task：66 结束, 记录到数据库
+2023-06-26 14:17:27.544 [ForkJoinPool.commonPool-worker-12] INFO  org.dromara.cloudeon.processor.InstallTask - close sifting Appender of `6-66`

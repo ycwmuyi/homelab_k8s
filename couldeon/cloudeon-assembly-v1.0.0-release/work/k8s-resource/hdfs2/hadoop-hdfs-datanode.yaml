@@ -1,0 +1,91 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  labels:
+    name: "hadoop-hdfs-datanode-hdfs2"
+  name: "hadoop-hdfs-datanode-hdfs2"
+  namespace: "default"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: "hadoop-hdfs-datanode-hdfs2"
+  strategy:
+    type: "RollingUpdate"
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+  minReadySeconds: 5
+  revisionHistoryLimit: 10
+  template:
+    metadata:
+      labels:
+        name: "hadoop-hdfs-datanode-hdfs2"
+        app: "hadoop-hdfs-datanode-hdfs2"
+        podConflictName: "hadoop-hdfs-datanode-hdfs2"
+      annotations:
+        serviceInstanceName: "hdfs2"
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchLabels:
+                name: "hadoop-hdfs-datanode-hdfs2"
+                podConflictName: "hadoop-hdfs-datanode-hdfs2"
+            namespaces:
+            - "default"
+            topologyKey: "kubernetes.io/hostname"
+      hostPID: false
+      hostNetwork: true
+      containers:
+      - args:
+        - "/opt/edp/hdfs2/conf/datanode-bootstrap.sh"
+        image: "registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4"
+        imagePullPolicy: "Always"
+        readinessProbe:
+          exec:
+            command:
+            - "/bin/bash"
+            - "-c"
+            - "curl --fail --connect-timeout 15 --max-time 15 \"http://`hostname`:50075/?user.name=hdfs\"\
+            \n"
+          failureThreshold: 3
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        name: "hadoop-hdfs-datanode-hdfs2"
+        resources:
+          requests: {}
+          limits: {}
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - mountPath: "/opt/edp/hdfs2/data"
+          name: "data"
+        - mountPath: "/opt/edp/hdfs2/log"
+          name: "log"
+        - mountPath: "/etc/localtime"
+          name: "timezone"
+        - mountPath: "/opt/edp/hdfs2/conf"
+          name: "conf"
+
+      nodeSelector:
+        hadoop-hdfs-datanode-hdfs2: "true"
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - hostPath:
+          path: "/opt/edp/hdfs2/data"
+        name: "data"
+      - hostPath:
+          path: "/opt/edp/hdfs2/log"
+        name: "log"
+      - hostPath:
+          path: "/etc/localtime"
+        name: "timezone"
+      - hostPath:
+          path: "/opt/edp/hdfs2/conf"
+        name: "conf"
+

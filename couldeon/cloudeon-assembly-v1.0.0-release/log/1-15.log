@@ -1,0 +1,14 @@
+2023-06-25 22:33:22.815 [ForkJoinPool.commonPool-worker-9] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - command task：15 开始, 记录到数据库
+2023-06-25 22:33:22.823 [ForkJoinPool.commonPool-worker-9] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - 更新服务实例 服务已启动 状态为: {}zookeeper1
+2023-06-25 22:33:22.825 [ForkJoinPool.commonPool-worker-9] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - command task：15 结束, 记录到数据库
+2023-06-25 22:33:22.833 [ForkJoinPool.commonPool-worker-9] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - close sifting Appender of `1-15`
+2023-06-26 13:38:11.215 [ForkJoinPool.commonPool-worker-2] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - command task：15 开始, 记录到数据库
+2023-06-26 13:38:11.226 [ForkJoinPool.commonPool-worker-2] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - 开始角色k8s资源文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/k8s-resource/monitor1
+2023-06-26 13:38:11.226 [ForkJoinPool.commonPool-worker-2] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - 加载服务实例角色k8s资源模板目录：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/stack/EDP-1.0.0/monitor/k8s
+2023-06-26 13:38:11.232 [ForkJoinPool.commonPool-worker-2] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - 完成角色k8s资源文件生成：/Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/k8s-resource/monitor1/prometheus.yaml
+2023-06-26 13:38:11.672 [ForkJoinPool.commonPool-worker-2] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - 在k8s上启动deployment: prometheus-monitor1 ,使用本地资源文件: /Users/ycw/work/ycw/home_lab_shanghai/k8s/couldeon/cloudeon-assembly-v1.0.0-release/work/k8s-resource/monitor1/prometheus.yaml ,持续等待 10 分钟
+2023-06-26 13:38:37.882 [ForkJoinPool.commonPool-worker-2] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - ========================start prometheus========================
+nohup prometheus --config.file=/opt/edp/monitor1/conf/prometheus.yml --storage.tsdb.path=/opt/edp/monitor1/data/prometheus  --web.listen-address=0.0.0.0:9090 --web.enable-lifecycle > /opt/edp/monitor1/log/prometheus-k8s-worker-node1.out 2>&1 &
+
+2023-06-26 13:38:37.888 [ForkJoinPool.commonPool-worker-2] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - command task：15 结束, 记录到数据库
+2023-06-26 13:38:37.891 [ForkJoinPool.commonPool-worker-2] INFO  o.d.cloudeon.processor.StartRoleK8sDeploymentTask - close sifting Appender of `1-15`

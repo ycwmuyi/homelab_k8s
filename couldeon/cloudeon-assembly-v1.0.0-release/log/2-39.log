@@ -1,0 +1,4 @@
+2023-06-25 22:46:03.093 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：39 开始, 记录到数据库
+2023-06-25 22:46:03.099 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - 给k8s节点 k8s-worker-node1 打上label :node-exporter-monitor1
+2023-06-25 22:46:03.177 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：39 结束, 记录到数据库
+2023-06-25 22:46:03.181 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - close sifting Appender of `2-39`

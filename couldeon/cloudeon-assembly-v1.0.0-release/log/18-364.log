@@ -1,0 +1,4 @@
+2023-06-26 15:24:52.113 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：364 开始, 记录到数据库
+2023-06-26 15:24:52.117 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - 给k8s节点 k8s-worker-node2 打上label :hadoop-hdfs-namenode-hdfs2
+2023-06-26 15:24:52.259 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：364 结束, 记录到数据库
+2023-06-26 15:24:52.262 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - close sifting Appender of `18-364`

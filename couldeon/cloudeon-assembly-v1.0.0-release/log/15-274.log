@@ -1,3 +1,0 @@
-2023-06-26 15:05:57.434 [ForkJoinPool.commonPool-worker-2] INFO  o.d.cloudeon.processor.StopRoleK8sDeploymentTask - command task：274 开始, 记录到数据库
-2023-06-26 15:05:57.439 [ForkJoinPool.commonPool-worker-2] INFO  o.d.cloudeon.processor.StopRoleK8sDeploymentTask - command task：274 结束, 记录到数据库
-2023-06-26 15:05:57.444 [ForkJoinPool.commonPool-worker-2] INFO  o.d.cloudeon.processor.StopRoleK8sDeploymentTask - close sifting Appender of `15-274`

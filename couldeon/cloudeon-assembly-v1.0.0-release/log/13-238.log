@@ -1,2 +1,0 @@
-2023-06-26 15:05:05.806 [ForkJoinPool.commonPool-worker-9] INFO  o.d.cloudeon.processor.DeleteServiceDataDirTask - command task：238 开始, 记录到数据库
-2023-06-26 15:05:06.232 [ForkJoinPool.commonPool-worker-9] INFO  o.d.cloudeon.processor.DeleteServiceDataDirTask - 238:发生异常，处理异常。。。java.lang.RuntimeException: java.io.IOException: java.lang.IllegalArgumentException: Invalid host pattern char in clobotics堡垒机

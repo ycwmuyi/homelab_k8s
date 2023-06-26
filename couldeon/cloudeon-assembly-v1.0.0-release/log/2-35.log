@@ -1,8 +1,0 @@
-2023-06-25 22:44:32.091 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：35 开始, 记录到数据库
-2023-06-25 22:44:32.097 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - 给k8s节点 k8s-worker-node1 打上label :prometheus-monitor1
-2023-06-25 22:44:32.172 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：35 结束, 记录到数据库
-2023-06-25 22:44:32.178 [ForkJoinPool.commonPool-worker-4] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - close sifting Appender of `2-35`
-2023-06-26 13:50:08.390 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：35 开始, 记录到数据库
-2023-06-26 13:50:08.397 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - 给k8s节点 k8s-worker-node3 打上label :zookeeper-server-zookeeper1
-2023-06-26 13:50:08.549 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：35 结束, 记录到数据库
-2023-06-26 13:50:08.587 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - close sifting Appender of `2-35`

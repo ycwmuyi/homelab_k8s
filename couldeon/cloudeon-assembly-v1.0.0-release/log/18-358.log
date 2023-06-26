@@ -1,4 +1,0 @@
-2023-06-26 15:23:26.885 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.HdfsZkfcFormatTask - command task：358 开始, 记录到数据库
-2023-06-26 15:23:26.892 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.HdfsZkfcFormatTask - 在节点192.168.100.52上执行命令:sudo docker  run --net=host -v /opt/edp/hdfs2/conf:/opt/edp/hdfs2/conf  registry.cn-hangzhou.aliyuncs.com/udh/hadoop:3.3.4 sh -c "  yes Y| hdfs --config  /opt/edp/hdfs2/conf zkfc -formatZK "   
-2023-06-26 15:23:28.874 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.HdfsZkfcFormatTask - command task：358 结束, 记录到数据库
-2023-06-26 15:23:28.878 [ForkJoinPool.commonPool-worker-6] INFO  org.dromara.cloudeon.processor.HdfsZkfcFormatTask - close sifting Appender of `18-358`

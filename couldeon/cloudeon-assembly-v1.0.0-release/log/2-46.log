@@ -1,4 +1,0 @@
-2023-06-25 22:47:14.884 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - command task：46 开始, 记录到数据库
-2023-06-25 22:47:14.892 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - 更新服务实例 服务已启动 状态为: {}monitor1
-2023-06-25 22:47:14.894 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - command task：46 结束, 记录到数据库
-2023-06-25 22:47:14.934 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.UpdateServiceStateTask - close sifting Appender of `2-46`

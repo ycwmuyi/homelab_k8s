@@ -1,4 +1,0 @@
-2023-06-26 15:07:09.298 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.DeleteServiceDataDirTask - command task：328 开始, 记录到数据库
-2023-06-26 15:07:09.301 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.DeleteServiceDataDirTask - 执行远程命令：rm -rf /opt/edp/hdfs1
-2023-06-26 15:07:09.370 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.DeleteServiceDataDirTask - command task：328 结束, 记录到数据库
-2023-06-26 15:07:09.374 [ForkJoinPool.commonPool-worker-4] INFO  o.d.cloudeon.processor.DeleteServiceDataDirTask - close sifting Appender of `17-328`

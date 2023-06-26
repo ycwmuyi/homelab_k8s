@@ -1,5 +1,0 @@
-[
-{
-"targets":["k8s-worker-node2:5541","k8s-worker-node1:5541","k8s-master-node1:5541"]
-}
-]

@@ -1,4 +1,0 @@
-2023-06-26 14:03:57.527 [ForkJoinPool.commonPool-worker-8] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：43 开始, 记录到数据库
-2023-06-26 14:03:57.533 [ForkJoinPool.commonPool-worker-8] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - 给k8s节点 k8s-worker-node1 打上label :zookeeper-server-zookeeper1
-2023-06-26 14:03:57.689 [ForkJoinPool.commonPool-worker-8] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：43 结束, 记录到数据库
-2023-06-26 14:03:57.693 [ForkJoinPool.commonPool-worker-8] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - close sifting Appender of `3-43`

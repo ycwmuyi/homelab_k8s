@@ -1,4 +1,0 @@
-2023-06-26 13:39:20.209 [ForkJoinPool.commonPool-worker-2] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：20 开始, 记录到数据库
-2023-06-26 13:39:20.214 [ForkJoinPool.commonPool-worker-2] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - 给k8s节点 k8s-worker-node1 打上label :grafana-monitor1
-2023-06-26 13:39:20.371 [ForkJoinPool.commonPool-worker-2] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - command task：20 结束, 记录到数据库
-2023-06-26 13:39:20.375 [ForkJoinPool.commonPool-worker-2] INFO  org.dromara.cloudeon.processor.TagHostLabelTask - close sifting Appender of `1-20`

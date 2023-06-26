@@ -1,4 +1,0 @@
-2023-06-26 14:10:32.872 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.DeleteServiceDataDirTask - command task：58 开始, 记录到数据库
-2023-06-26 14:10:33.047 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.DeleteServiceDataDirTask - 执行远程命令：rm -rf /opt/edp/zookeeper1
-2023-06-26 14:10:33.152 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.DeleteServiceDataDirTask - command task：58 结束, 记录到数据库
-2023-06-26 14:10:33.156 [ForkJoinPool.commonPool-worker-10] INFO  o.d.cloudeon.processor.DeleteServiceDataDirTask - close sifting Appender of `5-58`

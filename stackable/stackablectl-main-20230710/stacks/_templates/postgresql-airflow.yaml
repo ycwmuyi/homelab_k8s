@@ -14,3 +14,5 @@ options:
     username: airflow
     password: airflow
     database: airflow
+  global:
+    storageClass: nfs-client-01

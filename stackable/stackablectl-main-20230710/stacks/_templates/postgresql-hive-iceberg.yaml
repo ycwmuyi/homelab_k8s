@@ -13,3 +13,5 @@ options:
     database: hive
   primary:
     extendedConfiguration: password_encryption=md5
+  global:
+    storageClass: nfs-client-01

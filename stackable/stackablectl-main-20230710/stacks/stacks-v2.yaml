@@ -128,9 +128,9 @@ stacks:
       - hbase
       - hdfs
     manifests:
-      - plainYaml: ./stackablectl-0.8.0/stacks/hdfs-hbase/zookeeper.yaml
-      - plainYaml: ./stackablectl-0.8.0/stacks/hdfs-hbase/hdfs.yaml
-      - plainYaml: ./stackablectl-0.8.0/stacks/hdfs-hbase/hbase.yaml
+      - plainYaml: ./stackablectl-main-20230710/stacks/hdfs-hbase/zookeeper.yaml
+      - plainYaml: ./stackablectl-main-20230710/stacks/hdfs-hbase/hdfs.yaml
+      - plainYaml: ./stackablectl-main-20230710/stacks/hdfs-hbase/hbase.yaml
     parameters: []
   nifi-kafka-druid-superset-s3:
     description: Stack containing NiFi, Kafka, Druid, MinIO and Superset for data visualization
@@ -189,15 +189,15 @@ stacks:
       - minio
       - s3
     manifests:
-      - helmChart: https://raw.githubusercontent.com/stackabletech/stackablectl/main/stacks/_templates/minio.yaml
-      - helmChart: https://raw.githubusercontent.com/stackabletech/stackablectl/main/stacks/_templates/postgresql-hive.yaml
-      - helmChart: https://raw.githubusercontent.com/stackabletech/stackablectl/main/stacks/_templates/postgresql-hive-iceberg.yaml
-      - helmChart: https://raw.githubusercontent.com/stackabletech/stackablectl/main/stacks/_templates/postgresql-superset.yaml
-      - plainYaml: https://raw.githubusercontent.com/stackabletech/stackablectl/main/stacks/trino-superset-s3/s3-connection.yaml
-      - plainYaml: https://raw.githubusercontent.com/stackabletech/stackablectl/main/stacks/spark-trino-superset-s3/hive-metastore.yaml
-      - plainYaml: https://raw.githubusercontent.com/stackabletech/stackablectl/main/stacks/trino-superset-s3/trino.yaml
-      - plainYaml: https://raw.githubusercontent.com/stackabletech/stackablectl/main/stacks/spark-trino-superset-s3/trino-prediction-catalog.yaml
-      - plainYaml: https://raw.githubusercontent.com/stackabletech/stackablectl/main/stacks/trino-superset-s3/superset.yaml
+      - helmChart: ./stackablectl-main-20230710/stacks/_templates/minio.yaml
+      - helmChart: ./stackablectl-main-20230710/stacks/_templates/postgresql-hive.yaml
+      - helmChart: ./stackablectl-main-20230710/stacks/_templates/postgresql-hive-iceberg.yaml
+      - helmChart: ./stackablectl-main-20230710/stacks/_templates/postgresql-superset.yaml
+      - plainYaml: ./stackablectl-main-20230710/stacks/trino-superset-s3/s3-connection.yaml
+      - plainYaml: ./stackablectl-main-20230710/stacks/spark-trino-superset-s3/hive-metastore.yaml
+      - plainYaml: ./stackablectl-main-20230710/stacks/trino-superset-s3/trino.yaml
+      - plainYaml: ./stackablectl-main-20230710/stacks/spark-trino-superset-s3/trino-prediction-catalog.yaml
+      - plainYaml: ./stackablectl-main-20230710/stacks/trino-superset-s3/superset.yaml
     parameters:
       - name: trinoAdminPassword
         description: Password of the Trino admin user

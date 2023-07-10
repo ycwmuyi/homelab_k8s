@@ -11,3 +11,5 @@ options:
     username: superset
     password: superset
     database: superset
+  global:
+    storageClass: nfs-client-01

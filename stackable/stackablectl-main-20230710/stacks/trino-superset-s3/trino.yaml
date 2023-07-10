@@ -25,6 +25,12 @@ spec:
     roleGroups:
       default:
         replicas: 1
+        config:
+          resources:
+            storage:
+              data:
+                storageClass: nfs-client-01
+                capacity: 3Gi
   workers:
     config:
       resources:
@@ -36,6 +42,12 @@ spec:
     roleGroups:
       default:
         replicas: 1
+        config:
+          resources:
+            storage:
+              data:
+                storageClass: nfs-client-01
+                capacity: 3Gi
 ---
 apiVersion: v1
 kind: Secret

@@ -18,6 +18,12 @@ spec:
   metastore:
     roleGroups:
       default:
+        config:
+          resources:
+            storage:
+              data:
+                storageClass: nfs-client-01
+                capacity: 3Gi
         replicas: 1
 ---
 apiVersion: hive.stackable.tech/v1alpha1
@@ -39,4 +45,10 @@ spec:
   metastore:
     roleGroups:
       default:
+        config:
+          resources:
+            storage:
+              data:
+                storageClass: nfs-client-01
+                capacity: 3Gi
         replicas: 1

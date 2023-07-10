@@ -11,3 +11,5 @@ options:
     username: druid
     password: druid
     database: druid
+  global:
+    storageClass: nfs-client-01

@@ -1,0 +1,35 @@
+---
+apiVersion: zookeeper.stackable.tech/v1alpha1
+kind: ZookeeperCluster
+metadata:
+  name: zookeeper
+spec:
+  image:
+    productVersion: 3.8.0
+    stackableVersion: "23.4"
+  servers:
+    roleGroups:
+      default:
+        replicas: 1
+        config:
+          resources:
+            storage:
+              data:
+                storageClass: nfs-client-01
+                capacity: 2Gi
+---
+apiVersion: zookeeper.stackable.tech/v1alpha1
+kind: ZookeeperZnode
+metadata:
+  name: hdfs-znode
+spec:
+  clusterRef:
+    name: zookeeper
+---
+apiVersion: zookeeper.stackable.tech/v1alpha1
+kind: ZookeeperZnode
+metadata:
+  name: hbase-znode
+spec:
+  clusterRef:
+    name: zookeeper

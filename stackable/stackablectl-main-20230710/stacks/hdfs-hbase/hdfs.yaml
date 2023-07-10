@@ -1,0 +1,43 @@
+apiVersion: hdfs.stackable.tech/v1alpha1
+kind: HdfsCluster
+metadata:
+  name: hdfs
+spec:
+  image:
+    productVersion: 3.3.4
+    stackableVersion: "23.4"
+  clusterConfig:
+    dfsReplication: 1
+    listenerClass: external-unstable
+    zookeeperConfigMapName: hdfs-znode
+  nameNodes:
+    config:
+      resources:
+        storage:
+          data:
+            storageClass: nfs-client-01
+            capacity: 5Gi
+    roleGroups:
+      default:
+        replicas: 2
+  dataNodes:
+    config:
+      resources:
+        storage:
+          data:
+            count: 1
+            storageClass: nfs-client-01
+            capacity: 5Gi
+    roleGroups:
+      default:
+        replicas: 1
+  journalNodes:
+    config:
+      resources:
+        storage:
+          data:
+            storageClass: nfs-client-01
+            capacity: 5Gi
+    roleGroups:
+      default:
+        replicas: 1

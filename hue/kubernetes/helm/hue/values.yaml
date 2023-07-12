@@ -1,6 +1,6 @@
 image:
    registry: "gethue"
-   tag: "latest"
+   tag: "20230710-140101"
    pullPolicy: "Always"
 hue:
   replicas: 2
@@ -14,7 +14,7 @@ hue:
     password: "hue"
     #password_script=echo ${DATABASE_PASSWORD}
     name: "hue"
-    storageName: "microk8s-hostpath"
+    storageName: "nfs-client-01"
   interpreters: |
     [[[postgresql]]]
       name = postgresql
@@ -33,16 +33,22 @@ hue:
     broker_url=redis://redis:6379/0
     result_cache='{"BACKEND": "django_redis.cache.RedisCache", "LOCATION": "redis://redis:6379/0", "OPTIONS": {"CLIENT_CLASS": "django_redis.client.DefaultClient"},"KEY_PREFIX": "queries"}'
     celery_result_backend=redis://redis:6379/0
+    
+    [[hdfs_clusters]]
+
+    [[[default]]]
+    fs_defaultfs=hdfs://hdfs-namenode-default-0.default:8020
+    webhdfs_url=http://hdfs-namenode-default-0.default:9870/webhdfs/v1
 balancer:
   enabled: true
 api:
-  enabled: false
+  enabled: true
   domain: api.gethue.com
 workers:
-  enabled: false
+  enabled: true
   replicas: 1
 scheduler:
-  enabled: false
+  enabled: true
 websocket:
   enabled: false
   replicas: 1

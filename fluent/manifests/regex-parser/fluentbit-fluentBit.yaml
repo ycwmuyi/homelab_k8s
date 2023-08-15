@@ -1,0 +1,10 @@
+apiVersion: fluentbit.fluent.io/v1alpha2
+kind: FluentBit
+metadata:
+  name: fluent-bit
+  namespace: fluent
+  labels:
+    app.kubernetes.io/name: fluent-bit
+spec:
+  image: kubesphere/fluent-bit:v2.1.7
+  fluentBitConfigName: fluent-bit-config

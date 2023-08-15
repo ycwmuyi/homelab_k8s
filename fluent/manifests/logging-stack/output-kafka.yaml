@@ -1,0 +1,12 @@
+apiVersion: fluentbit.fluent.io/v1alpha2
+kind: ClusterOutput
+metadata:
+  name: kafka
+  labels:
+    fluentbit.fluent.io/enabled: "false"
+    fluentbit.fluent.io/component: logging
+spec:
+  matchRegex: (?:kube|service)\.(.*)
+  kafka:
+    brokers: 192.168.1.3:9092,192.168.1.4:9092
+    topics: ks-log

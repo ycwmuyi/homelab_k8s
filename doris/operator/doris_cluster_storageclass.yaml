@@ -1,0 +1,61 @@
+# This yaml describe using `storageclass` to provide persistentVolume for fe and be.
+# This yaml use default `storageclass` on kubernetes. when use specific storageclass please update then field of storageClassName.
+apiVersion: doris.selectdb.com/v1
+kind: DorisCluster
+metadata:
+  labels:
+    app.kubernetes.io/name: doriscluster
+    app.kubernetes.io/instance: doriscluster-sample-storageclass
+    app.kubernetes.io/part-of: doris-operator
+  name: doriscluster-sample-storageclass1
+  namespace: doris
+spec:
+  feSpec:
+    replicas: 3
+    image: core.harbor.muyicw.top/selectdb/doris.fe-ubuntu:2.0.2
+    persistentVolumes:
+      - mountPath: /opt/apache-doris/fe/doris-meta
+        name: fetest
+        persistentVolumeClaimSpec:
+          # when use specific storageclass, the storageClassName should reConfig, example as annotation.
+          storageClassName: nfs-client-01
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            # notice: if the storage size less 5G, fe will not start normal.
+            requests:
+              storage: 30Gi
+      - mountPath: /opt/apache-doris/fe/log
+        name: felog
+        persistentVolumeClaimSpec:
+          # when use specific storageclass, the storageClassName should reConfig, example as annotation.
+          storageClassName: nfs-client-01
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 30Gi
+  beSpec:
+    replicas: 3
+    image: core.harbor.muyicw.top/selectdb/doris.be-ubuntu:2.0.2-noavx2-202310240139
+    persistentVolumes:
+      - mountPath: /opt/apache-doris/be/storage
+        name: betest
+        persistentVolumeClaimSpec:
+          # when use specific storageclass, the storageClassName should reConfig, example as annotation.
+          storageClassName: nfs-client-01
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 30Gi
+      - mountPath: /opt/apache-doris/be/log
+        name: belog
+        persistentVolumeClaimSpec:
+          # when use specific storageclass, the storageClassName should reConfig, example as annotation.
+          storageClassName: nfs-client-01
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 30Gi

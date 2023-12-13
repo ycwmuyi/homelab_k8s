@@ -115,7 +115,7 @@ spec:
                 path: nginx.conf
       containers:
         - name: zeppelin-server
-          image: apache/zeppelin-server:0.10.1
+          image: core.harbor.muyicw.top/apache/zeppelin:0.10.1
           command: ["sh", "-c", "$(ZEPPELIN_HOME)/bin/zeppelin.sh"]
           lifecycle:
             preStop:

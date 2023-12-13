@@ -1,0 +1,80 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zeppelin-server
+  namespace: zeppelin
+  labels:
+    app.kubernetes.io/name: zeppelin-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: zeppelin-server
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: zeppelin-server
+    spec:
+      serviceAccountName: zeppelin-server
+      volumes:
+        - name: zeppelin
+          persistentVolumeClaim:
+            claimName: zeppelin
+      containers:
+        - name: zeppelin-server
+          image: core.harbor.muyicw.top/apache/zeppelin:0.10.1-spark-3.1.2-hadoop-3.2
+          command: ["sh", "-c", "$(ZEPPELIN_HOME)/bin/zeppelin.sh"]
+          lifecycle:
+            preStop:
+              exec:
+                # SIGTERM triggers a quick exit; gracefully terminate instead
+                command: ["sh", "-c", "ps -ef | grep org.apache.zeppelin.server.ZeppelinServer | grep -v grep | awk '{print $2}' | xargs kill"]
+          ports:
+            - name: http
+              containerPort: 8080
+          env:
+            - name: SPARK_HOME
+              valueFrom:
+                fieldRef:
+                  apiVersion: v1
+                  fieldPath: metadata.uid
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  apiVersion: v1
+                  fieldPath: metadata.name
+          volumeMounts:
+            - name: zeppelin     # configure this to persist notebook
+              mountPath: /zeppelin/notebook
+            - name: zeppelin                # configure this to persist Zeppelin configuration
+              mountPath: /zeppelin/conf
+            - name: zeppelin          # configure this to mount customized Kubernetes spec for interpreter
+              mountPath: /zeppelin/k8s
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: zeppelin
+  namespace: zeppelin
+spec:
+  storageClassName: nfs-client-01
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 30Gi
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: zeppelin-server
+  namespace: zeppelin
+spec:
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8080
+  selector:
+    app.kubernetes.io/name: zeppelin-server

@@ -28,8 +28,8 @@ data:
   # Default value is 'local.zeppelin-project.org' while it points 127.0.0.1 and `kubectl port-forward zeppelin-server` will give localhost to connects.
   # If you have your ingress controller configured to connect to `zeppelin-server` service and have a domain name for it (with wildcard subdomain point the same address), you can replace serviceDomain field with your own domain.
   SERVICE_DOMAIN: local.zeppelin-project.org:8080
-  ZEPPELIN_K8S_SPARK_CONTAINER_IMAGE: core.harbor.muyicw.top/apache/zeppelin-interpreter-spark:0.10.1-spark-3.1.2-hadoop-3.2
-  ZEPPELIN_K8S_CONTAINER_IMAGE: core.harbor.muyicw.top/apache/zeppelin-interpreter-spark:0.10.1-spark-3.1.2-hadoop-3.2
+  ZEPPELIN_K8S_SPARK_CONTAINER_IMAGE: core.harbor.muyicw.top/apache/spark:spark-3.1.2-hadoop-3.2-with-jars-23121623
+  ZEPPELIN_K8S_CONTAINER_IMAGE: core.harbor.muyicw.top/apache/zeppelin:0.10.1
   ZEPPELIN_HOME: /opt/zeppelin
   ZEPPELIN_SERVER_RPC_PORTRANGE: 12320:12320
   # default value of 'master' property for spark interpreter.
@@ -166,8 +166,10 @@ spec:
           volumeMounts:
             - name: zeppelin     # configure this to persist notebook
               mountPath: /opt/zeppelin/notebook
-        #            - name: zeppelin                # configure this to persist Zeppelin configuration
-        #              mountPath: /zeppelin/conf
+              subPath: notebook
+            - name: zeppelin                # configure this to persist Zeppelin configuration
+              mountPath: /zeppelin/conf
+              subPath: conf
         #            - name: k8s-interpreter-conf          # configure this to mount customized Kubernetes spec for interpreter
         #              mountPath: /opt/zeppelin/k8s/interpreter
         - name: zeppelin-server-gateway

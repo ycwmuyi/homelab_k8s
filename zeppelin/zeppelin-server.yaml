@@ -89,6 +89,20 @@ data:
 ---
 
 ---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: zeppelin-conf
+data:
+  zeppelin-site.xml: |
+    <property>
+      <name>spark.sql.hive.metastore.uris</name>
+      <value>thrift://thrift://10.244.1.62:9083</value>
+    </property>
+
+---
+
+---
 #apiVersion: v1
 #kind: ConfigMap
 #metadata:
@@ -102,6 +116,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: zeppelin-server
+  namespace: zeppelin
   labels:
     app.kubernetes.io/name: zeppelin-server
 spec:
@@ -124,12 +139,12 @@ spec:
             items:
               - key: nginx.conf
                 path: nginx.conf
-        #        - name: k8s-interpreter-conf
-        #          configMap:
-        #            name: k8s-interpreter-conf
-        #            items:
-        #              - key: 100-interpreter-spec.yaml
-        #                path: 100-interpreter-spec.yaml
+        - name: zeppelin-site
+          configMap:
+            name: zeppelin-conf
+        - name: k8s-interpreter-conf
+          configMap:
+            name: k8s-interpreter-conf
         - name: zeppelin
           persistentVolumeClaim:
             claimName: zeppelin
@@ -137,6 +152,7 @@ spec:
         - name: zeppelin-server
           image: core.harbor.muyicw.top/apache/zeppelin:0.10.1
           command: ["sh", "-c", "$(ZEPPELIN_HOME)/bin/zeppelin.sh"]
+#          command: ["tail", "-f", "$(ZEPPELIN_HOME)/bin/zeppelin.sh"]
           lifecycle:
             preStop:
               exec:
@@ -167,11 +183,12 @@ spec:
             - name: zeppelin     # configure this to persist notebook
               mountPath: /opt/zeppelin/notebook
               subPath: notebook
-            - name: zeppelin                # configure this to persist Zeppelin configuration
-              mountPath: /zeppelin/conf
-              subPath: conf
-        #            - name: k8s-interpreter-conf          # configure this to mount customized Kubernetes spec for interpreter
-        #              mountPath: /opt/zeppelin/k8s/interpreter
+            - name: zeppelin-site
+              mountPath: /opt/zeppelin/conf/zeppelin-site.xml
+              subPath: zeppelin-site.xml
+            - name: k8s-interpreter-conf          # configure this to mount customized Kubernetes spec for interpreter
+              mountPath: /opt/zeppelin/k8s/interpreter/100-interpreter-spec.yaml
+              subPath: 100-interpreter-spec.yaml
         - name: zeppelin-server-gateway
           image: nginx:1.14.0
           command: ["/bin/sh", "-c"]
